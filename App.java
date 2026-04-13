@@ -18,6 +18,8 @@ public class App {
             double studyHours = input.nextDouble();
  
             boolean isAdult = age >= 18;
+
+            greetStudent(name);
  
             System.out.println("\n--- Student Profile ---");
             System.out.println("Name: " + name);
@@ -36,6 +38,11 @@ public class App {
     	for (int i = 1; i <= 3; i++) {
         	System.out.println("Keep learning Java!");
     	}
+
 	}
+
+    public static void greetStudent(String name) {
+        System.out.println("Welcome, " + name + "!");
+    }
 }
 
